@@ -1,12 +1,38 @@
 main {
+
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     padding-block: 24px;
+    
+        
 }
 
 main img {
     width: 286px;
     height: 286px;
     object-fit: cover;
+}
+
+@media (width <=360px) {
+
+    & .container {
+        padding-inline: 16px;
+    }
+
+    & main {
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-block: 16px;
+                   
+
+        & .img{
+            width: 328px;
+            height: 328px;
+            object-fit: cover;            
+        }
+        
+    }
 }
